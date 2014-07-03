@@ -1,0 +1,33 @@
+this.subscriptions = {
+	'domain.tld/end/point': {
+		'1234': {
+			'subscribers': [cb, socket, cb]
+		},
+		'?filter=val&other=val': {
+			'subscribers': [cb, socket]
+		}
+	}
+};
+
+
+socket.subs = {
+	'domain.tl/end/point': {
+		'1234': {
+			'1234': {
+				endpoint: ...,
+				entity: 1234
+			},
+		'?filter=val&other=val': {
+			'?filter=val&other=val&limit=150': {
+				filter: 'val',
+				other: 'val',
+				limit: 150
+			},
+			'?filter=val&other=val&limit=50': {
+				filter: 'val',
+				other: 'val',
+				limit: 50
+			}
+		}
+	]
+};
